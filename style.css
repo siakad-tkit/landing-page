@@ -27,11 +27,29 @@ header nav {
 
 }
 
-header nav .logo {
-    color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
+.logo-container {
+    display: flex;
+    align-items: center;
 }
+
+.logo-image {
+    width: 50px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 10px; /* Jarak antara logo dan teks */
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif; /* Sesuaikan dengan font Anda */
+    font-size: 1.5rem;
+    font-weight: 700; /* Atur tebal tulisan sesuai kebutuhan */
+    color: white; /* Sesuaikan warna teks */
+}
+
+.highlight {
+    color: #cddc39;
+    font-size: 1rem; /* Warna highlight untuk teks "Darul Falah" */
+}
+
 
 header nav ul {
     list-style: none;
@@ -39,7 +57,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 10px;
+    margin: 0 50px;
 }
 
 header nav ul li a {
@@ -51,6 +69,7 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a.active {
     text-decoration: underline;
+    color: #C9FF53;
 }
 
 /* Hero Section */
@@ -78,9 +97,10 @@ header nav ul li a.active {
 }
 
 .hero-overlay{
+    margin-top: 5%;
     background: rgba(0, 0, 0, 0.50);
     width: 100% ;
-    height: 405px;
+    height: 310px;
     left: 0;
     right: 0;
     position: absolute;
@@ -88,10 +108,10 @@ header nav ul li a.active {
 }
 
 .hero-content {
+    margin-top: 30px;
     position: absolute;  
-    margin: 0 auto;
     z-index: 2;
-    padding: 60px;
+    padding: 100px;
 }
 
 .hero h1 {
@@ -114,9 +134,9 @@ header nav ul li a.active {
     display: inline-block;
     margin-top: 200px;
     margin-bottom: 20px;
-    padding: 10px 20px;
+    padding: 7px 40px;
     background: transparent;
-    border: 3px solid #C9FF53;
+    border: 2px solid #C9FF53;
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -127,6 +147,72 @@ header nav ul li a.active {
     background: #a4b42b;
     color: #fff;
 }
+
+.visi-misi-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.visi-misi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 70px 50px;
+}
+
+.visi-misi-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+
+
+.visi-misi-text h2, .visi-misi-text h3 {
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 275;
+    color: #28350A;
+}
+
+.visi-misi-text h2::after, .visi-misi-text h3::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 5px;
+    border-radius: 5px;
+    background: black;
+    margin-top: 5px;
+}
+
+.visi-misi-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.visi-misi-text ul li {
+    margin-bottom: 10px;
+}
+
+.visi-misi-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.visi-misi-image img {
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Modul Section */
 .modul-container {
