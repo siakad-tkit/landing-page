@@ -213,8 +213,233 @@ header nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.kurikulum-section {
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url('img/kurikulum.jpg') no-repeat center center/cover;
+    color: black;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 
-/* Modul Section */
+}
+
+
+.kurikulum-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50); /* Overlay transparan hitam */
+    z-index: 1; /* Pastikan berada di bawah konten */
+    pointer-events: none; /* Agar overlay tidak menghalangi interaksi dengan konten */
+}
+
+.line-behind{
+    width: 100%; /* Sesuaikan lebar agar tidak memenuhi seluruh lebar */
+    height: 4px;
+    border-radius: 6px;
+    background: #cddc39;
+    position: absolute;
+    left: 0;
+    bottom: 50%; /* Mengatur agar garis berada di bawah konten */
+    z-index: 1;
+    
+}
+
+.container-kurikulum{
+    position: absolute;
+    z-index: 2;
+}
+
+.kurikulum-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+    font-style: normal;
+    font-weight: 275;
+
+}
+
+.kurikulum-header .highlight {
+    color: #cddc39;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 275;
+}
+
+.kurikulum-header .underline {
+    width: 50%;
+    height: 4px;
+    border-radius: 6px;
+    background: #cddc39; /* Sesuaikan dengan warna highlight */
+    margin: 0 auto 20px;
+}
+
+.kurikulum-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    max-width: 1200px; /* Batasi lebar maksimal */
+    width: 100%;
+}
+
+.kurikulum-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+    margin: 10px;
+}
+
+.kurikulum-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.kurikulum-card .highlight-bar {
+    border-radius: 6px;
+    width: 50%;
+    height: 4px;
+    background: #cddc39; /* Sesuaikan dengan warna highlight */
+    margin-bottom: 10px;
+    margin: 0 auto 20px;
+
+}
+
+.kurikulum-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.gallery-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background: #cddc39;
+    margin: 0 auto 20px;
+}
+
+/* Carousel */
+.carousel-inner {
+    overflow: hidden;
+    display: flex;
+    transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+.carousel-item-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 33.33%; /* Membagi lebar menjadi 3 gambar per slide */
+    overflow: hidden;
+}
+
+/* Image Wrapper with border and shadow */
+.image-wrapper {
+    position: relative;
+    border: 3px solid #cddc39; /* Green border */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* Menjaga gambar tetap terpotong dengan baik */
+}
+
+.bulat{
+    background-color: #425308;
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    padding: 10px;
+    margin-top: 2%;
+}
+.caption {
+    display: flex;
+    flex: row;
+    gap: 10px;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.caption h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: left;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.caption p {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #cddc39; /* Warna hijau untuk tombol prev/next */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .caption p {
+        font-size: 0.9rem;
+    }
+
+    .gallery-item {
+        width: 100%; /* Menampilkan satu gambar per slide pada layar kecil */
+    }
+}
+
+
+
 .modul-container {
     display: flex;
     gap: 20px;

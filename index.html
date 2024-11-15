@@ -6,6 +6,9 @@
     <title>TKIT Darul Falah</title>
     <link rel="stylesheet" href="style.css"> <!-- Sesuaikan dengan file CSS Anda -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 <body>
@@ -59,41 +62,141 @@
             </div>
         </section>
 
-        <section id="#">
-            <h2>Kurikulum dan Metode Pembelajaran</h2>
-            <div class="modul-container">
-                <div class="modul-item">
-                    <h3>Modul Klasikal</h3>
-                    <p>Metode pembelajaran yang fokus pada interaksi kelas.</p>
+        <section id="#" class="kurikulum-section">
+            <div class="container-kurikulum">
+                <div class="kurikulum-header">
+                    <h2>Kurikulum dan Metode <span class="highlight">Pembelajaran</span></h2>
+                    <div class="underline"></div>
                 </div>
-                <div class="modul-item">
-                    <h3>Modul Kelompok</h3>
-                    <p>Belajar dalam kelompok untuk meningkatkan kolaborasi.</p>
-                </div>
-                <div class="modul-item">
-                    <h3>Modul Sentra</h3>
-                    <p>Belajar melalui sentra-sentra kegiatan interaktif.</p>
+                <div class="kurikulum-container">
+                    <div class="kurikulum-card">
+                        <h3>Model Klasikal</h3>
+                        <div class="highlight-bar"></div>
+                        <p>Membina peserta didik (siswa dan siswi) menjadi anak yang sholeh dan sholehah, cerdas hati dan otaknya, sehingga siap menjadi generasi Islam penerus perjuangan bangsa untuk menggapai kemuliaan dan ridho Ilahi.</p>
+                    </div>
+                    <div class="kurikulum-card">
+                        <h3>Model Kelompok</h3>
+                        <div class="highlight-bar"></div>
+                        <p>Mempersiapkan peserta didik agar memiliki kompetensi yang memadai untuk dapat mengikuti pendidikan lebih lanjut.</p>
+                    </div>
+                    <div class="kurikulum-card">
+                        <h3>Model Sentra</h3>
+                        <div class="highlight-bar"></div>
+                        <p>Membekali peserta didik dengan pengetahuan dan ketrampilan dasar kecakapan hidup (life skill) sebagai salah satu modal dasar hidup di masyarakat.</p>
+                    </div>
+                    
                 </div>
             </div>
+            <div class="line-behind"></div>
+
+            
         </section>
 
-        <section id="galeri">
-            <h2>Foto Kegiatan</h2>
-            <div class="foto-gallery">
-                <div class="foto-item">
-                    <img src="path/to/your/image1.jpg" alt="Foto Bersama">
-                    <p>Foto Bersama</p>
+        <section id="gallery" class="gallery-section">
+            <div class="gallery-header">
+                <h2>Foto Kegiatan</h2>
+                <div class="underline"></div>
+            </div>
+        
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <!-- Carousel Item 1 (Tiga gambar dalam satu item) -->
+                    <div class="carousel-item active">
+                        <div class="carousel-item-content">
+                            <div class="gallery-item">
+                                <img src="img/foto-bersama-guru.jpg" class="d-block w-100" alt="Sholat 2">
+                                <div class="caption">
+                                    <div class="bulat"></div>
+                                    <div>
+                                        <h5>Sholat 2</h5>
+                                        <p>Anak-anak berlatih sholat secara bersama-sama</p>
+                                    </div>
+                                </div>
+                                <div class="image-wrapper">     
+                                </div> 
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/foto-bersama-guru.jpg" class="d-block w-100" alt="Sholat 2">
+                                <div class="caption">
+                                    <div class="bulat"></div>
+                                    <div>
+                                        <h5>Sholat 2</h5>
+                                        <p>Anak-anak berlatih sholat secara bersama-sama</p>
+                                    </div>
+                                </div>
+                                <div class="image-wrapper">     
+                                </div> 
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/foto-bersama-guru.jpg" class="d-block w-100" alt="Sholat 2">
+                                <div class="caption">
+                                    <div class="bulat"></div>
+                                    <div>
+                                        <h5>Sholat 2</h5>
+                                        <p>Anak-anak berlatih sholat secara bersama-sama</p>
+                                    </div>
+                                </div>
+                                <div class="image-wrapper">     
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Item 2 (Tiga gambar dalam satu item) -->
+                    <div class="carousel-item">
+                        <div class="carousel-item-content">
+                            <div class="gallery-item">
+                                <img src="img/foto-bersama-guru.jpg" class="d-block w-100" alt="Sholat 2">
+                                <div class="caption">
+                                    <div class="bulat"></div>
+                                    <div>
+                                        <h5>Sholat 2</h5>
+                                        <p>Anak-anak berlatih sholat secara bersama-sama</p>
+                                    </div>
+                                </div>
+                                <div class="image-wrapper">     
+                                </div> 
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/foto-bersama-guru.jpg" class="d-block w-100" alt="Sholat 2">
+                                <div class="caption">
+                                    <div class="bulat"></div>
+                                    <div>
+                                        <h5>Sholat 2</h5>
+                                        <p>Anak-anak berlatih sholat secara bersama-sama</p>
+                                    </div>
+                                </div>
+                                <div class="image-wrapper">     
+                                </div> 
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/foto-bersama-guru.jpg" class="d-block w-100" alt="Sholat 2">
+                                <div class="caption">
+                                    <div class="bulat"></div>
+                                    <div>
+                                        <h5>Sholat 2</h5>
+                                        <p>Anak-anak berlatih sholat secara bersama-sama</p>
+                                    </div>
+                                </div>
+                                <div class="image-wrapper">     
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="foto-item">
-                    <img src="path/to/your/image2.jpg" alt="Wisuda TK">
-                    <p>Wisuda TK</p>
-                </div>
-                <div class="foto-item">
-                    <img src="path/to/your/image3.jpg" alt="Latihan Praktek">
-                    <p>Latihan Praktek</p>
-                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
+        
+        
+        
     </main>
 
     <footer id="kontak">
